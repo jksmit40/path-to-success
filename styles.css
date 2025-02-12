@@ -254,7 +254,75 @@ main h2 {
 
 main h3 {
   color: var(--yellow);
+  padding-left: 4vw;
 }
+
+main section {
+  background-color: white;
+  margin: 2% 5% 2% 5%;
+  border-radius: 15px;
+  padding: 2.5vh 6vw 4vh 4vh;
+}
+
+main section h4 {
+  color:#484FB7;
+
+}
+
+.choose {
+  background:#D9526F;
+  margin: 2vh 0 0 0;
+  padding: 0 0 1vh 0;
+  border-radius: 0;
+}
+
+.choose h2 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+}
+
+.choose-list {
+  
+  display: grid;
+  grid-template-areas:
+      "a    b"
+      "c    d";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.choose-list li:first-child {
+  grid-area: a;
+  background-color:#4CA7C0;
+}
+
+.choose-list li:nth-child(2) {
+  grid-area: b;
+  background-color:#6B8FE7;
+}
+
+.choose-list li:nth-child(3) {
+  grid-area: c;
+  background-color: #E9BB57;
+}
+
+.choose-list li:nth-child(4) {
+  grid-area: d;
+  background-color:#ffffff;
+}
+
+.choose-list li {
+  height: 12.5vh;
+  list-style: none;
+  text-align: center;
+  margin: 1vh 2vw;
+  padding: 10% 5%;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
 
 @media (max-width: 450px) {
   .extra-text {

@@ -168,6 +168,10 @@ html {
     background-color:#484FB7;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1, h2 {
     font-family: 'Kavoon';
 }
@@ -183,6 +187,8 @@ nav h2 {
 
 h2 {
     font-size: 2em;
+      padding-top: 2vh;
+      padding-left: 4vw;
 }
 
 h3 {
@@ -278,7 +284,7 @@ main section h4 {
 
 .choose h2 {
   padding-top: 2vh;
-  padding-left: 2vw;
+  padding-left: 4vw;
 }
 
 .choose-list {
@@ -322,7 +328,79 @@ main section h4 {
   border-radius: 10px;
 }
 
+table {
+  background-color:#E9BB57;
+  width: 55vw;
+  height: 25vh;
+}
 
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#484FB7;
+  margin-top: 0;
+  padding: 1vh 0 1vh 0;
+}
+
+table tr:nth-child(2) {
+  background-color:#ffffff
+}
+
+table tr:nth-child(3) {
+  background-color:#ffffff
+}
+
+table tr:nth-child(4) {
+  background-color:#ffffff
+}
+
+.first-step {
+  background:#D9526F;
+  margin: 0;
+  padding: 0 0 1vh 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-step h2 {
+  padding-left: 2vw;
+}
+
+.first-step p {
+  color: var(--White);
+  padding: 2.5%;
+  font-size: 1.05em;
+}
+
+button {
+  margin: 0 10vw 0 10vw;
+  padding: 2vh;
+  border-radius: 15px;
+  box-shadow: 5px 5px 4px black;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  border-radius: 0 0 30px 30px;
+  padding: 5vh 0 5vh 0;
+  margin-bottom: 6vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: .75em;
+}
+
+footer p {
+  padding-left: 5vw;
+}
+
+footer a {
+  padding-right: 5vw;
+  color: white;
+}
 
 @media (max-width: 450px) {
   .extra-text {

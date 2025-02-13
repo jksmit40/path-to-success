@@ -221,7 +221,7 @@ header h1 {
     margin: 0 15px 50px 15px;
     padding-top: 10px;
     position: relative;
-    top: 3vh;
+    top: 2.2vh;
     z-index: -1;
     display: block;
 }
@@ -549,7 +549,7 @@ footer a {
 
   .content > section {
     background-color: white;
-    margin: 1vh 1.5vw 1vh 1.5vw;
+    margin: 0.5vh 1vw 1vh 0.5vw;
     border-radius: 15px;
     padding: 1vh 1vw;
   }
@@ -657,7 +657,81 @@ footer a {
     "a b c d";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    font-size: 1em;
+    margin-top: 1%;
   }
 
+  .choose-list li {
+    padding: 15% 2.5%;
+    margin: 0 5px 0 5px;
+    font-size: 1.15em;
+  }
+
+  .table-prices {
+    grid-template-areas:
+      "price    price   price  price"
+      "tb1    tb2  tb3    tb4";
+      grid-template-rows: 1fr;
+      grid-template-columns:  repeat(4, 1fr);
+      min-width: 950px;
+  }
+
+  .table {
+    margin: 2vh 1vw;
+  }
+
+  .table-prices h2 {
+    margin-left: -3.5vw;
+    margin-bottom: -2vh;
+  }
+
+  .table h3 {
+    font-size: 1.25em;
+    margin-left: -5vw;
+    text-wrap: nowrap;
+  }
+
+  table {
+    width: 100%;
+    max-width: 20vw;
+  }
+
+  td, th {
+    text-align: left;
+    padding: 0 5px 0 5px;
+    height: 4vh;
+  }
+
+  button {
+    margin: 1vh 10vw 10vh 10vw;
+  }
+
+@media (min-width: 1280px) {
+
+  html {
+    padding:0 11% 0 11%;
+  }
+
+  .content section:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    position: relative;
+    bottom: 15%;
+    margin-bottom: 15%;
+  }
+
+  .content section:nth-of-type(3) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    position: relative;
+    bottom: 35%;
+  }
+
+  .content section:nth-of-type(5) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    position: relative;
+    bottom: 32%;
+    margin-bottom: -2%;
+  }
+}
 }
